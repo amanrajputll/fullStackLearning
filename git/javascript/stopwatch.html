@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main1 {
+        height: 200px;
+        width: 400px;
+        background-color: rgb(150, 120, 120);
+        border: 2px solid black;
+      }
+      .btn{
+        margin-top: 20px;
+      position: relative;
+      left: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="sec">00</p>
+    <p id="min">00</p>
+    <p id="hours">00</p>
+    <div class="main1"></div>
+   
+        <br>
+      <button class="start">start</button>
+      <button class="stop">stop</button>
+      <button class="reset">reset</button>
+    
+</div>
+    <script>
+     let startBtn = document.getElementById("start");
+      let stopBtn = document.getElementById("stop");
+      let resetBtn = document.getElementById("reset");
+
+      let hour = 00;
+      let minute = 00;
+      let second = 00;
+      let count = 00;
+
+      startBtn.addEventListener("click", function () {
+        timer = true;
+        stopWatch();
+      });
+
+      stopBtn.addEventListener("click", function () {
+        timer = false;
+      });
+
+      resetBtn.addEventListener("click", function () {
+        timer = false;
+        hour = 0;
+        minute = 0;
+        second = 0;
+        count = 0;
+        document.getElementById("hr").innerHTML = "00";
+        document.getElementById("min").innerHTML = "00";
+        document.getElementById("sec").innerHTML = "00";
+        document.getElementById("count").innerHTML = "00";
+      });
+
+      function stopWatch() {
+        if (timer) {
+          count++;
+
+          if (count == 100) {
+            second++;
+            count = 0;
+          }
+
+          if (second == 60) {
+            minute++;
+            second = 0;
+          }
+
+          if (minute == 60) {
+            hour++;
+            minute = 0;
+            second = 0;
+          }
+
+          let hrString = hour;
+          let minString = minute;
+          let secString = second;
+          let countString = count;
+
+        }
+    }
+
+    </script>
+  </body>
+</html>

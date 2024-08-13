@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>Login here!</h1>
+        <input type="email" placeholder="Enter your email" />
+        <input type="password" placeholder="Enter your password " />
+        <button class="btn">submit</button>
+      </form>
+    </div>
+    <script>
+      let btt = document.querySelector(".btn");
+      let btndi =()=> {
+        
+        btt.disabled = true;
+      };
+      setTimeout(btndi,5000);
+    </script>
+  </body>
+</html>

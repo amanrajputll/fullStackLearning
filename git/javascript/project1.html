@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .appe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+      .square {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <input class="num" type="number" placeholder="Enter Num" />
+      <select>
+        <option value="circle">circle</option>
+        <option value="square">square</option>
+      </select>
+      <input type="color" class="color" />
+      <button>Enter</button>
+      <div class="appe"></div>
+    </div>
+    <script>
+      let num = document.querySelector(".num");
+      let col = document.querySelector(".color");
+      let button = document.querySelector("button");
+      let select = document.querySelector("select");
+      let div = document.querySelector(".appe");
+      button.addEventListener("click", function () {
+        let numval = num.value;
+        let colval = col.value;
+        let drop = select.value;
+        for (let i = 1; i <= numval; i++) {
+          let divv = document.createElement("div");
+          divv.setAttribute("contentEditable", true);
+          if (drop == "circle") {
+            divv.classList.add("circle");
+            divv.style.backgroundColor = colval;
+           
+          } else {
+            divv.classList.add("square");
+            divv.style.backgroundColor = colval;
+           
+          }
+          div.appendChild(divv);
+          divv.addEventListener("dblclick", function (event) {
+            div.removeChild(event.target);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

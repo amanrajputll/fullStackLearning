@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.option {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="next-button">Next</button>
+        <div id="result-container"></div>
+    </div>
+    <script>
+        // Define the questions, options, and answers
+const questions = [
+    {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+        answer: "Paris"
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Earth", "Mars", "Jupiter", "Saturn"],
+        answer: "Mars"
+    },
+    {
+        question: "What is the largest ocean on Earth?",
+        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        answer: "Pacific Ocean"
+    },
+    {
+        question: "Who wrote 'To Kill a Mockingbird'?",
+        options: ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
+        answer: "Harper Lee"
+    }
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+const questionContainer = document.getElementById('question-container');
+const optionsContainer = document.getElementById('options-container');
+const nextButton = document.getElementById('next-button');
+const resultContainer = document.getElementById('result-container');
+
+// Function to display a question
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionContainer.textContent = currentQuestion.question;
+    optionsContainer.innerHTML = '';
+
+    currentQuestion.options.forEach(option => {
+        const optionElement = document.createElement('div');
+        optionElement.textContent = option;
+        optionElement.className = 'option';
+        optionElement.addEventListener('click', () => checkAnswer(option));
+        optionsContainer.appendChild(optionElement);
+    });
+
+    nextButton.style.display = 'none';  // Hide the 'Next' button initially
+}
+
+// Function to check the answer
+function checkAnswer(selectedOption) {
+    const correctAnswer = questions[currentQuestionIndex].answer;
+
+    if (selectedOption === correctAnswer) {
+        score++;
+    }
+
+    document.querySelectorAll('.option').forEach(option => {
+        if (option.textContent === correctAnswer) {
+            option.style.backgroundColor = '#d4edda';  // Correct answer green
+        } else if (option.textContent === selectedOption && selectedOption !== correctAnswer) {
+            option.style.backgroundColor = '#f8d7da';  // Wrong answer red
+        }
+        option.style.pointerEvents = 'none';  // Disable further clicks
+    });
+
+    nextButton.style.display = 'block';  // Show the 'Next' button
+}
+
+// Function to show the final result
+function showResult() {
+    questionContainer.textContent = `You scored ${score} out of ${questions.length}!`;
+    optionsContainer.innerHTML = '';
+    nextButton.style.display = 'none';
+}
+
+// Event listener for the 'Next' button
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showResult();
+    }
+});
+
+// Start the quiz
+showQuestion();
+
+    </script>
+</body>
+</html>

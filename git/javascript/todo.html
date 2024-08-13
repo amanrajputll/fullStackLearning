@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">This is My Todoapp</div>
+    <div class="input">
+      <input id="input" type="text" placeholder="Enter the task" />
+      <button id="btn">Add Todo</button>
+    </div>
+    <div class="container"></div>
+    <ul id="list"></ul>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let inpu = document.getElementById("input");
+        if (inpu.value.trim() === "") {
+          return;
+        }
+        let ul = document.getElementById("list");
+        let textnode = document.createTextNode(inpu.value);
+        let li = document.createElement("li");
+        let btn = document.createElement("button");
+        btn.innerText = "update";
+        let btn2 = document.createElement("button");
+        btn2.innerText = "delete";
+        li.appendChild(textnode);
+        li.appendChild(btn)
+        li.appendChild(btn2)
+        ul.appendChild(li);
+        btn2.addEventListener("click" , function(){
+           li.remove();
+        })
+        btn.addEventListener("click" , function(){
+           li.textContent = inpu.value; 
+           li.appendChild(btn)
+           li.appendChild(btn2)   
+            
+        })
+
+      });
+    </script>
+  </body>
+</html>

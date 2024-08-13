@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .continer {
+        background-color: blueviolet;
+        color: aqua;
+        height: 150px;
+        width: 100px;
+        border: 2px solid black;
+      }
+      .circle {
+        background-color: rebeccapurple;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid red;
+      }
+      .continer2 {
+        display: flex;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="continer"></div>
+    <div class="continer2"></div>
+  </body>
+  <script>
+    let ol = document.querySelector(".continer");
+    let cont = document.createElement("ol");
+    for (let i = 0; i <= 5; i++) {
+      let li = document.createElement("li");
+      li.innerText = "hello";
+      cont.appendChild(li);
+      ol.appendChild(cont);
+    }
+    let div = document.querySelector(".continer2");
+   
+    for (let i = 0; i <= 5; i++) {
+        let divtag = document.createElement("div");
+      divtag.classList.add("circle")
+      div.appendChild(divtag);
+    }
+  </script>
+</html>
