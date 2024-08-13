@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 500;
+        border-bottom: 3px solid whitesmoke;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 0px;
+        height: 80px;
+        width: 1550px;
+        align-items: center;
+        background-color: white;
+      }
+      .logo {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 10px;
+      }
+      .tags {
+        text-decoration: none;
+        font-size: large;
+        color: gray;
+        position: relative;
+        top: 10px;
+      }
+      .btn {
+        position: relative;
+        left: 90px;
+        top: 10px;
+        height: 40px;
+        border: 2px solid white;
+        background-color: white;
+      }
+      .Home {
+        position: relative;
+        top: 10px;
+      }
+      .profil {
+        position: relative;
+        top: 71px;
+        left: 90px;
+      }
+      .src {
+        height: 40px;
+        width: 250px;
+        position: relative;
+        right: 8px;
+        top: 10px;
+        border: 2px solid white;
+      }
+      .main1 {
+        height: 500px;
+        width: 1550px;
+        background-color: rgb(244, 230, 230);
+        position: relative;
+        top: 60px;
+      }
+      .leaf1 {
+        position: relative;
+        bottom: 76px;
+      }
+      .settinglogo {
+        position: relative;
+        left: 1000px;
+        bottom: 160px;
+      }
+      .degain {
+        position: relative;
+        left: 1040px;
+        top: 250px;
+      }
+      .coffeelogo {
+        height: 230px;
+        width: 230px;
+        border-radius: 50%;
+        position: relative;
+        top: 100px;
+        left: 500px;
+        border: 2px solid goldenrod;
+      }
+      .loginhere {
+        text-align: center;
+        position: relative;
+        top: 110px;
+        right: 20px;
+      }
+      .loginbtn {
+        position: relative;
+        top: 110px;
+        left: 670px;
+        height: 30px;
+        width: 150px;
+        border-radius: 20px;
+        color: white;
+        background-color: black;
+        border: none;
+      }
+      .helpc {
+        height: 1px;
+        width: 1550px;
+      }
+      .helpclogo {
+        position: relative;
+        top: 90px;
+        left: 70px;
+      }
+      .helpctext {
+        position: relative;
+        top: 48px;
+        left: 100px;
+        font-size: larger;
+      }
+      #line1 {
+        z-index: 20;
+        margin-top: 140px;
+        margin-left: 80px;
+        width: 85%;
+        border-bottom: 1px solid grey;
+      }
+      .main5 {
+        background-color: rgb(29, 87, 72);
+        height: 700px;
+        width: 1500px;
+        position: relative;
+        top: 40px;
+      }
+      .left4 {
+        position: relative;
+        top: 40px;
+        left: 180px;
+      }
+      .footer {
+        display: flex;
+        position: relative;
+        top: 100px;
+      }
+      .centre {
+        display: grid;
+        position: relative;
+        left: 250px;
+        top: 30px;
+      }
+      .aboutus {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        position: relative;
+        bottom: 10px;
+        font-weight: bold;
+        margin: 10px;
+      }
+      .links {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: relative;
+        margin: 10px;
+      }
+
+      .centre1 {
+        display: grid;
+        position: relative;
+        left: 280px;
+        top: 30px;
+      }
+      .respons {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        position: relative;
+        bottom: 10px;
+        margin: 10px;
+        font-weight: bold;
+      }
+      .link2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        margin: 10px;
+        position: relative;
+      }
+      .centre2 {
+        display: grid;
+        position: relative;
+        left: 280px;
+        top: 30px;
+      }
+      .quick {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        position: relative;
+        bottom: 10px;
+        margin: 10px;
+        font-weight: bold;
+      }
+      .link3 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        margin: 10px;
+        position: relative;
+      }
+      .centre3 {
+        display: grid;
+        position: relative;
+        left: 280px;
+        top: 30px;
+      }
+      .socialmedia {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        position: relative;
+        bottom: 10px;
+        left: 250px;
+        margin: 10px;
+        font-weight: bold;
+      }
+      .insta {
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        position: relative;
+        top: 78px;
+        left: 90px;
+      }
+      .fb {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+        top: 70px;
+        left: 85px;
+      }
+      .twitter {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+        top: 70px;
+        left: 90px;
+      }
+      .andriod {
+        position: relative;
+        left: 140px;
+        top: 60px;
+      }
+      .iphone {
+        position: relative;
+        left: 140px;
+        top: 60px;
+      }
+      .line {
+        z-index: 20;
+        margin-top: 190px;
+        margin-left: 160px;
+        width: 80%;
+        border-bottom: 1px solid white;
+      }
+      .footer2 {
+        display: flex;
+        position: relative;
+        top: 50px;
+        left: 160px;
+      }
+      .footer2 a {
+        margin-right: 30px;
+        color: white;
+      }
+      .footer2 p {
+        position: relative;
+        bottom: 17px;
+        right: 10px;
+        color: white;
+      }
+      .copyright {
+        position: relative;
+        left: 470px;
+        margin-top: 18px;
+        font-size: x-small;
+      }
+
+      /*login modal*/
+
+      .formcont {
+        position: absolute;
+        top: 0;
+
+        height: 100%;
+        font-family: sans-serif;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        backdrop-filter: invert(20%);
+        display: none;
+      }
+
+      .container {
+        margin-top: 90px;
+
+        background-color: white;
+        height: 480px;
+        width: 40%;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 55%;
+      }
+
+      .h1m {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+.skip{
+  float: right;
+  position: relative;
+  right: 20px;
+  bottom:20px ;
+  cursor: pointer;
+}
+      .formmo input[type="text"],
+      .formmo input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+        box-sizing: border-box;
+      }
+#username{
+  position: relative;
+  bottom: 30px;
+}
+      .formmo button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 50%;
+        position: relative;
+        left: 150px;
+        top: 20px;
+      }
+
+      .formmo button:hover {
+        background-color: #45a049;
+      }
+
+      a {
+        color: #4caf50;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .bottom-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .noacc {
+        position: relative;
+        left: 80px;
+        top: 20px;
+      }
+      .bottom-links a {
+        margin-right: 10px;
+      }
+
+      .whatsapp-link {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        right: 30px;
+      }
+      .wp {
+        height: 30px;
+        width: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 30px;
+        margin: 1px;
+      }
+      .whatsapp-link i {
+        margin-right: 5px;
+      }
+      .wptext {
+        position: absolute;
+        left: 85px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nda">
+      <header>
+        <div class="nav">
+          <img
+            class="logo"
+            src="https://www.starbucks.in/assets/icon/logo.png"
+          />
+          <a class="tags" href="./starbucks1.html">Home</a>
+          <a class="tags" href="#">Order</a>
+          <a class="tags" href="#">Gift</a>
+          <a class="tags" href="#">Pay</a>
+          <a class="tags" href="#">Store</a>
+          <button class="btn">
+            <img src="https://www.starbucks.in/assets/icon/search.svg" />
+          </button>
+          <input
+            class="src"
+            type="search"
+            placeholder="Looking for something specific?"
+          />
+          <a href="./loginstarbucks1.html">
+            <img
+              class="Home"
+              src="https://www.starbucks.in/assets/icon/account_thin.svg"
+          /></a>
+        </div>
+      </header>
+      <div class="profil">
+        <p>Profile > Account</p>
+      </div>
+      <div class="main1">
+        <img
+          class="leaf1"
+          src="https://www.starbucks.in/assets/images/leaf_gold.svg"
+        />
+        <img
+          class="coffeelogo"
+          src="https://thumbs.dreamstime.com/z/vector-mascot-starbucks-coffee-cup-happy-face-cartoon-style-have-retro-shadow-expression-316821056.jpg"
+        />
+        <img
+          class="settinglogo"
+          src="https://www.starbucks.in/assets/icon/settings_icon.svg"
+        />
+        <img
+          class="degain"
+          src="https://www.starbucks.in/assets/images/dots_gold.svg"
+        />
+        <h1 class="loginhere">Welcome to Starbucks</h1>
+        <a> ><button class="loginbtn">Login or Sign Up</button></a>
+      </div>
+      <div class="helpc">
+        <img
+          class="helpclogo"
+          src="https://www.starbucks.in/assets/icon/help_centre.svg"
+        />
+        <h2 class="helpctext">HELP CENTRE</h2>
+      </div>
+      <div id="line1"></div>
+      <div class="main5">
+        <div class="footer">
+          <div class="left4">
+            <img
+              class="img10"
+              src="https://www.starbucks.in/assets/icon/logo.png"
+            />
+          </div>
+          <div class="1">
+            <ul class="centre">
+              <a class="aboutus" href="#">About Us</a>
+              <a class="links" href="#">Our Heritage</a>
+              <a class="links" href="#">Coffeehouse</a>
+              <a class="links" href="#">Our Campany</a>
+              <a class="links" href="#">Our Campany</a>
+            </ul>
+          </div>
+          <div class="2">
+            <ul class="centre1">
+              <a class="respons" href="#">Responsibility</a>
+              <a class="link2" href="#">Diversity</a>
+              <a class="link2" href="#">Community</a>
+              <a class="link2" href="#">Ethical Sourcing</a>
+              <a class="link2" href="#">Environmental Stewardship</a>
+              <a class="link2" href="#">Learn More</a>
+            </ul>
+          </div>
+          <div class="3">
+            <ul class="centre2">
+              <a class="quick" href="#">Quick Links</a>
+              <a class="link3" href="#">Privacy Policy</a>
+              <a class="link3" href="#">FAQs</a>
+              <a class="link3" href="#"
+                >Starbucks India Mobile App<br />Terms of Use</a
+              >
+              <a class="link3" href="#">Customer Service</a>
+              <a class="link3" href="#">Starbucks Rewards Day Offer</a>
+              <a class="link3" href="#">Delivery</a>
+              <a class="link3" href="#">Season's Gifting</a>
+              <a class="link3" href="#">Beverage Subscription</a>
+            </ul>
+          </div>
+          <div class="4">
+            <ul class="center3">
+              <a class="socialmedia">SOCIAL MEDIA</a>
+              <img
+                class="insta"
+                src="https://static.vecteezy.com/system/resources/previews/023/986/502/non_2x/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png"
+              />
+              <img
+                class="fb"
+                src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.png"
+              />
+              <img
+                class="twitter"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHIZuDb--IJ-q5d97gWm1W2eyLj7BePcWnQ&s"
+              />
+            </ul>
+          </div>
+          <div class="5">
+            <div class="rightll">
+              <img
+                class="andriod"
+                src="https://www.starbucks.in/assets/images/appstoreiOS.png"
+              /><br />
+              <img
+                class="iphone"
+                src="https://www.starbucks.in/assets/images/appstoreAndroid.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer2">
+          <a class="Webfooter">Web Accessiblity</a>
+          <p class="line1">|</p>
+          <a class="Privacyfooter">Privacy Statement</a>
+          <p class="line1">|</p>
+          <a class="Termsfooter">Terms of Use</a>
+          <p class="line1">|</p>
+          <a class="Contactfoter">Contact Us</a>
+          <p class="copyright">
+            &copy;2024 Starbucks Coffee Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Moadal login-->
+    <div class="formcont">
+      <div class="container">
+        <h1 class="h1m">Login</h1>
+        <div>
+        <p class="skip">Skip</p>
+        </div>
+        <form class="formmo">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter Email ID or Mobile Number"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+
+          <button type="submit">Login</button>
+          <div class="bottom-links">
+            <a class="noacc" href="./singupstarbucks.html">Don't have an account? Sign Up</a>
+            <a class="noacc1" href="#">Get Help</a>
+          </div>
+          <div class="whatsapp-link">
+            <i class="fas fa-phone-alt"></i>
+            <a href="https://whatsapp.com/"
+              ><img
+                class="wp"
+                src="https://thumbs.dreamstime.com/t/istanbul-turkey-january-motion-graphic-video-whatsapp-social-media-logo-degree-rotating-inf%C4%B1n%C4%B1ty-loops-kk-fps-alpha-168296588.jpg"
+              />
+              <p class="wptext">
+                Already registered via WhatsApp? Continue Here
+              </p></a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      let login = document.querySelector(".loginbtn");
+      login.addEventListener("click", function () {
+        let main = document.querySelector(".formcont");
+        main.style.display = "flex";
+        document.body.style.position = "fixed";
+      });
+      let ski = document.querySelector(".skip")
+      ski.addEventListener("click",function(){
+        let main =document.querySelector(".formcont")
+        main.style.display = "none";
+        document.body.style.position = "";
+      })
+    </script>
+  </body>
+</html>

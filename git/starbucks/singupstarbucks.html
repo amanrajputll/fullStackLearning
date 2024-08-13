@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .nda {
+        height: fit-content;
+        width: fit-content;
+      }
+      header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 500;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 0px;
+        height: 80px;
+        width: 1550px;
+        align-items: center;
+        background-color: white;
+        border-bottom: 1px solid rgb(178, 173, 173);
+      }
+      .logo {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 10px;
+      }
+      .tags {
+        text-decoration: none;
+        font-size: large;
+        color: gray;
+        position: relative;
+        top: 10px;
+      }
+      .btn {
+        position: relative;
+        left: 90px;
+        top: 10px;
+        height: 40px;
+        border: 2px solid white;
+        background-color: white;
+      }
+      .Home {
+        position: relative;
+        top: 10px;
+      }
+
+      .src {
+        height: 40px;
+        width: 250px;
+        position: relative;
+        right: 8px;
+        top: 10px;
+        border: 2px solid white;
+      }
+      .main {
+        display: flex;
+        position: relative;
+        top: 105px;
+        background-color: rgb(29, 87, 72);
+        height: 80px;
+        width: 1520px;
+      }
+      .left1 {
+        position: relative;
+        left: 150px;
+        top: 7px;
+        text-align: center;
+        color: white;
+        font-size: x-large;
+      }
+      .right1 {
+        position: relative;
+        left: 1200px;
+        top: 20px;
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        border: none;
+      }
+      .rewards {
+        position: relative;
+        top: 110px;
+        left: 170px;
+        background-color: rgb(202, 213, 202);
+        height: 250px;
+        width: 1200px;
+        border-radius: 10px;
+      }
+      .left2 {
+        float: left;
+        height: 270px;
+        width: 120px;
+        position: relative;
+        bottom: 16px;
+      }
+      .sr {
+        position: relative;
+        top: 40px;
+        left: 40px;
+        color: rgba(11, 10, 10, 0.626);
+        font-size: large;
+      }
+      .btn1 {
+        position: relative;
+        left: 850px;
+        top: 50px;
+        height: 50px;
+        width: 190px;
+        border-radius: 30px;
+        background-color: rgb(8, 106, 8);
+        color: white;
+        border: none;
+      }
+      .handcr {
+        position: relative;
+        top: 150px;
+        left: 180px;
+        color: rgb(7, 32, 7);
+      }
+      .img1 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-left: 115px;
+        position: relative;
+        right: 130px;
+      }
+      .text {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 130px;
+      }
+      .text1 {
+        position: relative;
+        left: 30px;
+      }
+      .text2 {
+        position: relative;
+        left: 40px;
+      }
+      .text3 {
+        position: relative;
+        left: 65px;
+      }
+      .text4 {
+        position: relative;
+        left: 75px;
+      }
+      .text5 {
+        position: relative;
+        left: 40px;
+      }
+      .text6 {
+        position: relative;
+        left: 5px;
+      }
+      .name {
+        position: relative;
+        top: 90px;
+        left: 80px;
+        font-size: medium;
+      }
+      .degain {
+        position: relative;
+        top: 100px;
+        right: 20px;
+        height: 160px;
+        width: 1550px;
+        background-color: rgb(9, 30, 9);
+      }
+      .leftimg {
+        float: left;
+        position: relative;
+        top: 90px;
+        left: 15px;
+      }
+      .rightimg {
+        float: right;
+        position: relative;
+        right: 10px;
+      }
+      .signuppage {
+        height: 600px;
+        width: 1525px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: white;
+        position: relative;
+        top: 80px;
+        right: 12px;
+      }
+      .img4 {
+        position: relative;
+        top: 120px;
+        left: 25%;
+      }
+      .para1 {
+        position: relative;
+        top: 180px;
+        left: 100px;
+        color: rgb(20, 20, 20);
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: lighter;
+      }
+      .inputform {
+        position: relative;
+        top: 200px;
+      }
+      .email1 {
+        position: relative;
+        left: 129px;
+      }
+      .emailtext{
+        font-size: smaller;
+      }
+      .emailbox {
+        position: relative;
+        bottom: 30px;
+        border-bottom: 1px solid gray;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 500px;
+      }
+      .emailbox::placeholder{
+        font-size: x-small;
+      }
+      .pass1 {
+        position: relative;
+        left: 129px;
+      }
+      .passtext{
+        font-size: smaller;
+      }
+      .passbox {
+        position: relative;
+        bottom: 10px;
+        border-bottom: 1px solid gray;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 500px;
+      }
+      .passbox::placeholder{
+        font-size: x-small;
+      }
+      .requied{
+        position: relative;
+        bottom: 10px;
+        font-size: small;
+      }
+      .mobileno1 {
+        float: right;
+        position: relative;
+        right: 309px;
+        bottom: 210px;
+      }
+      .mobtext{
+        font-size: smaller;
+      }
+      .mobbox{
+        position: relative;
+        bottom: 3px;
+        border-bottom: 1px solid gray;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 500px;
+      }
+      .mobbox::placeholder{
+        font-size: x-small;
+      }
+      .requied1{
+        position: relative;
+        bottom: 5px;
+        font-size: small;
+      }
+      .pass2 {
+        float: right;
+        position: relative;
+        left: 200px;
+        bottom: 110px;
+        
+      }
+      .passtext1{
+        font-size: smaller;
+      }
+      .passbox{
+        position: relative;
+        bottom: 3px;
+       
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 500px;
+      }
+      .pass2::placeholder{
+        font-size: x-small;
+      }
+      .submit1{
+        position: relative;
+        left: 35%;
+        top: 30px;
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(66, 64, 64);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nda">
+      <header>
+        <div class="nav">
+          <img
+            class="logo"
+            src="https://www.starbucks.in/assets/icon/logo.png"
+          />
+          <a class="tags" href="./starbucks1.html">Home</a>
+          <a class="tags" href="#">Order</a>
+          <a class="tags" href="#">Gift</a>
+          <a class="tags" href="#">Pay</a>
+          <a class="tags" href="#">Store</a>
+          <button class="btn">
+            <img src="https://www.starbucks.in/assets/icon/search.svg" />
+          </button>
+          <input
+            class="src"
+            type="search"
+            placeholder="Looking for something specific?"
+          />
+          <a href="./loginstarbucks1.html">
+            <img
+              class="Home"
+              src="https://www.starbucks.in/assets/icon/account_thin.svg"
+          /></a>
+        </div>
+      </header>
+      <div class="name">Home > Create An Account</div>
+      <div class="degain">
+        <img
+          class="leftimg"
+          src="https://www.starbucks.in/assets/icon/green_ldots.svg"
+        />
+        <img
+          class="rightimg"
+          src="https://www.starbucks.in/assets/icon/green_rleaf.svg"
+        />
+      </div>
+      <div class="signuppage">
+        <img
+          class="img4"
+          src="https://www.starbucks.in/assets/icon/signup_process1.svg"
+          alt="?"
+        />
+        <div class="para1">
+          <h2>Login to Starbucks</h2>
+        </div>
+        <div class="inputform">
+          <div class="email1">
+            <p class="emailtext">EMAIL ID</p>
+            <br />
+            <input class="emailbox" type="email" placeholder="Enter EMAIL ID" />
+          </div>
+          <div class="pass1">
+            <p class="passtext">CREATE PASSWORD</p>
+            <input
+              class="passbox"
+              type="password"
+              checked
+              placeholder="Enter Password"
+            />
+            <p class="requied">8 Characters  1 Uppercase  1 Symbol  1 Numeric</p>
+          </div>
+          <div class="mobileno1">
+            <p class="mobtext">MOBILE NUMBER</p>
+            <input
+              class="mobbox"
+              type="number"
+              placeholder="ENTER MOBILE NUMBER"
+            />
+            <p class="requied1">
+              We will send an OTP on this Mobile Number for authentication.
+            </p>
+          </div>
+          <div class="pass2">
+            <p class="passtext1">CONFIRM PASSWORD</p>
+            <input
+              class="passbox"
+              type="password"
+              checked
+              placeholder="Re-enter Password*"
+            />
+          </div>
+          <button class="submit1">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

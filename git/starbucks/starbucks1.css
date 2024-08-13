@@ -1,0 +1,567 @@
+body{
+    overflow-x: hidden;
+}
+.nda {
+    height: fit-content;
+    width: fit-content;
+    
+  }
+  header{
+    position: fixed;
+    left: 0;
+    top:0;
+   z-index: 500;
+
+
+  }
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 0px;
+    height: 80px;
+    width: 1550px;
+    align-items: center;
+    background-color: white;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+   
+  }
+  .tags {
+    text-decoration: none;
+    font-size: large;
+    color: gray;
+    position: relative;
+    top: 10px;
+   
+  }
+  .btn {
+    position: relative;
+    left: 90px;
+    top: 10px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: white;
+  }
+  .Home{
+    position: relative;
+    top: 10px;
+  }
+
+  .src {
+    height: 40px;
+    width: 250px;
+    position: relative;
+    right: 8px;
+    top: 10px;
+    border: 2px solid white;
+  }
+  .main {
+    display: flex;
+    position: relative;
+    top: 105px;
+    background-color: rgb(29, 87, 72);
+    height: 80px;
+    width: 1520px;
+  }
+  .left1 {
+    position: relative;
+    left: 150px;
+    top: 7px;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+  }
+  .right1 {
+    position: relative;
+    left: 1200px;
+    top: 20px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+  }
+  .rewards {
+    position: relative;
+    top: 110px;
+    left: 170px;
+    background-color: rgb(202, 213, 202);
+    height: 250px;
+    width: 1200px;
+    border-radius: 10px;
+  }
+  .left2 {
+    float: left;
+    height: 270px;
+    width: 120px;
+    position: relative;
+    bottom: 16px;
+  }
+  .sr {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    color: rgba(11, 10, 10, 0.626);
+    font-size: large;
+  }
+  .btn1 {
+    position: relative;
+    left: 850px;
+    top: 50px;
+    height: 50px;
+    width: 190px;
+    border-radius: 30px;
+    background-color: rgb(8, 106, 8);
+    color: white;
+    border: none;
+  }
+  .handcr {
+    position: relative;
+    top: 150px;
+    left: 180px;
+    color: rgb(7, 32, 7);
+  }
+  .img1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 115px;
+    position: relative;
+    right: 130px;
+  }
+  .text {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 130px;
+  }
+  .text1 {
+    position: relative;
+    left: 30px;
+  }
+  .text2 {
+    position: relative;
+    left: 40px;
+  }
+  .text3 {
+    position: relative;
+    left: 65px;
+  }
+  .text4 {
+    position: relative;
+    left: 75px;
+  }
+  .text5 {
+    position: relative;
+    left: 40px;
+  }
+  .text6 {
+    position: relative;
+    left: 5px;
+  }
+  .main2 {
+    height: 300px;
+    width: 1500px;
+    background-color: rgb(244, 230, 230);
+    position: relative;
+    top: 160px;
+    color: rgb(7, 32, 7);
+  }
+  .textc {
+    width: fit-content;
+    position: relative;
+    top: 40px;
+    left: 180px;
+  }
+  .menu {
+    position: relative;
+    left: 1300px;
+    bottom: 15px;
+    color: rgb(8, 106, 8);
+  }
+  .leaf {
+    position: relative;
+    left: 1430px;
+    bottom: 90px;
+    height: 100px;
+    width: 70px;
+  }
+  .order {
+    height: 160px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+  }
+  .img4 {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+  }
+  .img5 {
+    position: relative;
+    bottom: 68px;
+    left: 20px;
+    bottom: 50px;
+  }
+  .rupee1 {
+    position: relative;
+    left: 20px;
+    top: 5px;
+  }
+  .text7 {
+    position: relative;
+    bottom: 110px;
+    left: 110px;
+  }
+  .text8 {
+    position: relative;
+    bottom: 130px;
+    left: 112px;
+    color: grey;
+  }
+  .btn3 {
+    position: relative;
+    bottom: 120px;
+    left: 250px;
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: rgb(8, 106, 8);
+    color: white;
+    border: none;
+  }
+  .order2 {
+    height: 160px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    bottom: 240px;
+    left: 550px;
+  }
+  .img6 {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+  }
+  .img7 {
+    position: relative;
+    bottom: 68px;
+    left: 20px;
+    bottom: 50px;
+    margin-bottom: 2px;
+  }
+  .rupee2 {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-size: x-small;
+  }
+  .text9 {
+    position: relative;
+    bottom: 110px;
+    left: 110px;
+  }
+  .text10 {
+    position: relative;
+    bottom: 130px;
+    left: 112px;
+    color: grey;
+  }
+  .btn4 {
+    position: relative;
+    bottom: 120px;
+    left: 250px;
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: rgb(8, 106, 8);
+    color: white;
+    border: none;
+  }
+  .order3 {
+    height: 160px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    bottom: 400px;
+    left: 1000px;
+  }
+  .img8 {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+  }
+  .img9 {
+    position: relative;
+    bottom: 68px;
+    left: 20px;
+    bottom: 50px;
+    margin-bottom: 2px;
+  }
+  .rupee3 {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-size: x-small;
+  }
+  .text11 {
+    position: relative;
+    bottom: 110px;
+    left: 110px;
+  }
+  .text12 {
+    position: relative;
+    bottom: 130px;
+    left: 112px;
+    color: gray;
+  }
+  .btn5 {
+    position: relative;
+    bottom: 120px;
+    left: 250px;
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: rgb(8, 106, 8);
+    color: white;
+    border: none;
+  }
+  .main4 {
+    height: 450px;
+    width: 1500px;
+    background-color: rgb(244, 230, 230);
+    position: relative;
+    top: 200px;
+  }
+  .back {
+    height: 350px;
+    width: 1200px;
+    background-image: url("https://www.tastingtable.com/img/gallery/the-ultra-fancy-coffee-machine-only-some-starbucks-stores-have/l-intro-1663870299.jpg");
+    background-size: cover;
+    position: relative;
+    left: 150px;
+    top: 20px;
+    border-radius: 20px;
+  }
+
+  .text13 {
+    position: relative;
+    top: 30px;
+    left: 150px;
+    color: rgb(10, 49, 10);
+  }
+  .btn6 {
+    font-size: x-small;
+    color: rgb(8, 106, 8);
+    position: relative;
+    top: 20px;
+    left: 50px;
+    border-radius: 10px;
+    border: none;
+  }
+  .text14 {
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 50px;
+  }
+  .para1 {
+    color: rgb(244, 232, 232);
+    position: relative;
+    top: 150px;
+    left: 50px;
+  }
+  .btn7 {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    height: 25px;
+    width: 160px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(23, 27, 23);
+  }
+  .main5 {
+    background-color: rgb(29, 87, 72);
+    height: 700px;
+    width: 1500px;
+    position: relative;
+    top: 230px;
+  }
+  .left4 {
+    position: relative;
+    top: 40px;
+    left: 180px;
+  }
+  .footer {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+  .centre {
+    display: grid;
+    position: relative;
+    left: 250px;
+    top: 30px;
+  }
+  .aboutus {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .links {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    margin: 10px;
+  }
+
+  .centre1 {
+    display: grid;
+    position: relative;
+    left: 280px;
+    top: 30px;
+  }
+  .respons {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  .link2 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+  }
+  .centre2 {
+    display: grid;
+    position: relative;
+    left: 280px;
+    top: 30px;
+  }
+  .quick {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  .link3 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+  }
+  .centre3 {
+    display: grid;
+    position: relative;
+    left: 280px;
+    top: 30px;
+  }
+  .socialmedia {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    left: 250px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  .insta {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    position: relative;
+    top: 78px;
+    left: 90px;
+  }
+  .fb {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 70px;
+    left: 85px;
+  }
+  .twitter {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 70px;
+    left: 90px;
+  }
+  .andriod {
+    position: relative;
+    left: 140px;
+    top: 60px;
+  }
+  .iphone {
+    position: relative;
+    left: 140px;
+    top: 60px;
+  }
+  .line {
+    z-index: 20;
+    margin-top: 190px;
+    margin-left: 160px;
+    width: 80%;
+    border-bottom: 1px solid white;
+  }
+  .footer2 {
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 160px;
+  }
+  .footer2 a {
+    margin-right: 30px;
+    color: white;
+  }
+  .footer2 p {
+    position: relative;
+    bottom: 17px;
+    right: 10px;
+    color: white;
+  }
+  .copyright {
+    position: relative;
+    left: 470px;
+    margin-top: 18px;
+    font-size: x-small;
+  }

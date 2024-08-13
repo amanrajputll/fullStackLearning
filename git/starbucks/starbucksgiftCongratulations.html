@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    .nda {
+      height: fit-content;
+      width: fit-content;
+    }
+    header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 500;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      top: 0px;
+      height: 80px;
+      width: 1550px;
+      align-items: center;
+      background-color: white;
+      border-bottom: 1px solid rgb(178, 173, 173);
+    }
+    .logo {
+      height: 50px;
+      width: 50px;
+      position: relative;
+      top: 10px;
+    }
+    .tags {
+      text-decoration: none;
+      font-size: large;
+      color: gray;
+      position: relative;
+      top: 10px;
+    }
+    .btn {
+      position: relative;
+      left: 90px;
+      top: 10px;
+      height: 40px;
+      border: 2px solid white;
+      background-color: white;
+    }
+    .Home {
+      position: relative;
+      top: 10px;
+    }
+
+    .src {
+      height: 40px;
+      width: 250px;
+      position: relative;
+      right: 8px;
+      top: 10px;
+      border: 2px solid white;
+    }
+    .main {
+      display: flex;
+      position: relative;
+      top: 105px;
+      background-color: rgb(29, 87, 72);
+      height: 80px;
+      width: 1520px;
+      margin: 0;
+      padding: 0;
+    }
+    .left1 {
+      position: relative;
+      left: 150px;
+      top: 7px;
+      text-align: center;
+      color: white;
+      font-size: x-large;
+    }
+    .right1 {
+      position: relative;
+      left: 1200px;
+      top: 20px;
+      height: 40px;
+      width: 150px;
+      border-radius: 20px;
+      border: none;
+    }
+    .name {
+      position: relative;
+      top: 90px;
+      left: 90px;
+      font-size: medium;
+    }
+    .degain {
+      position: relative;
+      top: 100px;
+      right: 10px;
+      height: 260px;
+      width: 1550px;
+      background-color: rgb(9, 30, 9);
+    }
+    .maindegain {
+      position: absolute;
+      top: 30px;
+      left: 110px;
+      height: 200px;
+      width: 1300px;
+      background-color: rgb(4, 88, 49);
+      border-radius: 10px;
+    }
+    .img2 {
+      height: 200px;
+    }
+    .text1 {
+      position: relative;
+      bottom: 200px;
+      left: 130px;
+      font-size: large;
+      color: white;
+    }
+    .text2 {
+      position: relative;
+      bottom: 190px;
+      left: 130px;
+      font-size: x-large;
+      color: white;
+    }
+    .text3 {
+      position: relative;
+      bottom: 200px;
+      left: 130px;
+      font-size: medium;
+      color: white;
+    }
+    .text4 {
+      position: relative;
+      bottom: 200px;
+      left: 130px;
+      font-size: medium;
+      color: white;
+    }
+    .text5 {
+      position: relative;
+      bottom: 210px;
+      left: 130px;
+      font-size: small;
+      color: white;
+    }
+    .btn2 {
+      position: relative;
+      bottom: 260px;
+      left: 1150px;
+      height: 30px;
+      width: 100px;
+      border-radius: 20px;
+      border: 1px solid rgb(4, 88, 49);
+      background-color: rgb(7, 130, 72);
+      color: white;
+    }
+    .main2 {
+      position: relative;
+      top: 100px;
+      right: 10px;
+      background-color: rgb(212, 204, 204);
+      height: 60px;
+      width: 1550px;
+    }
+    .textll {
+      text-decoration: none;
+      margin-right: 80px;
+      position: relative;
+      top: 20px;
+      left: 120px;
+      color: rgb(4, 88, 49);
+    }
+    .text6 {
+      position: relative;
+      top: 90px;
+
+      font-size: small;
+      height: 40px;
+      border-bottom: 1px solid gray;
+    }
+    .anytime{
+        position: relative;
+        left: 120px;
+    }
+    .text10 {
+      position: relative;
+      top: 100px;
+    
+      font-size: small;
+      height: 40px;
+      border-bottom: 1px solid gray;
+    }
+    .orderimg3 {
+      height: 120px;
+      width: 170px;
+      border-radius: 10px;
+      position: relative;
+      right: 70px;
+      top: 22px;
+    }
+    .img6 {
+      position: absolute;
+      left: 120px;
+    }
+    .contant4 {
+      height: 170px;
+      width: 380px;
+      border-radius: 10px;
+      background-color: rgb(227, 209, 209);
+      position: relative;
+      left: 150px;
+     top: 120px;
+    }
+    .text11 {
+      position: relative;
+      left: 120px;
+      bottom: 100px;
+    }
+    .btn6 {
+      position: relative;
+      left: 140px;
+      bottom: 100px;
+      height: 30px;
+      width: 90px;
+      border-radius: 20px;
+      border: none;
+      background-color: rgb(7, 130, 72);
+      color: white;
+    }
+    .main5 {
+      background-color: rgb(29, 87, 72);
+      height: 700px;
+      width: 1500px;
+      position: relative;
+      top: 200px;
+    }
+    .left4 {
+      position: relative;
+      top: 40px;
+      left: 180px;
+    }
+    .footer {
+      display: flex;
+      position: relative;
+      top: 100px;
+    }
+    .centre {
+      display: grid;
+      position: relative;
+      left: 250px;
+      top: 30px;
+    }
+    .aboutus {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      position: relative;
+      bottom: 10px;
+      font-weight: bold;
+      margin: 10px;
+    }
+    .links {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      position: relative;
+      margin: 10px;
+    }
+
+    .centre1 {
+      display: grid;
+      position: relative;
+      left: 280px;
+      top: 30px;
+    }
+    .respons {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      position: relative;
+      bottom: 10px;
+      margin: 10px;
+      font-weight: bold;
+    }
+    .link2 {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      margin: 10px;
+      position: relative;
+    }
+    .centre2 {
+      display: grid;
+      position: relative;
+      left: 280px;
+      top: 30px;
+    }
+    .quick {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      position: relative;
+      bottom: 10px;
+      margin: 10px;
+      font-weight: bold;
+    }
+    .link3 {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      margin: 10px;
+      position: relative;
+    }
+    .centre3 {
+      display: grid;
+      position: relative;
+      left: 280px;
+      top: 30px;
+    }
+    .socialmedia {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      position: relative;
+      bottom: 10px;
+      left: 250px;
+      margin: 10px;
+      font-weight: bold;
+    }
+    .insta {
+      height: 65px;
+      width: 65px;
+      border-radius: 50%;
+      position: relative;
+      top: 78px;
+      left: 90px;
+    }
+    .fb {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      position: relative;
+      top: 70px;
+      left: 85px;
+    }
+    .twitter {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      position: relative;
+      top: 70px;
+      left: 90px;
+    }
+    .andriod {
+      position: relative;
+      left: 140px;
+      top: 60px;
+    }
+    .iphone {
+      position: relative;
+      left: 140px;
+      top: 60px;
+    }
+    .line {
+      z-index: 20;
+      margin-top: 190px;
+      margin-left: 160px;
+      width: 80%;
+      border-bottom: 1px solid white;
+    }
+    .footer2 {
+      display: flex;
+      position: relative;
+      top: 50px;
+      left: 160px;
+    }
+    .footer2 a {
+      margin-right: 30px;
+      color: white;
+    }
+    .footer2 p {
+      position: relative;
+      bottom: 17px;
+      right: 10px;
+      color: white;
+    }
+    .copyright {
+      position: relative;
+      left: 470px;
+      margin-top: 18px;
+      font-size: x-small;
+    }
+  </style>
+  <body>
+    <div class="nda">
+      <header>
+        <div class="nav">
+          <img
+            class="logo"
+            src="https://www.starbucks.in/assets/icon/logo.png"
+          />
+          <a class="tags" href="./starbucks1.html">Home</a>
+          <a class="tags" href="#">Order</a>
+          <a class="tags" href="#">Gift</a>
+          <a class="tags" href="#">Pay</a>
+          <a class="tags" href="#">Store</a>
+          <button class="btn">
+            <img src="https://www.starbucks.in/assets/icon/search.svg" />
+          </button>
+          <input
+            class="src"
+            type="search"
+            placeholder="Looking for something specific?"
+          />
+          <a href="./loginstarbucks1.html">
+            <img
+              class="Home"
+              src="https://www.starbucks.in/assets/icon/account_thin.svg"
+          /></a>
+        </div>
+      </header>
+      <div class="name">Home > Gift Cards</div>
+      <div class="degain">
+        <div class="maindegain">
+          <img
+            class="img2"
+            src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/banner_icon_1_2_d97e1578ee.png"
+          />
+          <h2 class="text1">Starbucks</h2>
+          <h1 class="text2">Essential Collection</h1>
+          <h3 class="text3">
+            A whole new expression of Starbucks Design. Explore merchandise
+            collection
+          </h3>
+          <h4 class="text4">Starting From</h4>
+          <h2 class="text5">₹ 500</h2>
+          <button class="btn2">Order Now</button>
+        </div>
+      </div>
+      <div class="main2">
+        <a href="./starbucks1gift.html" class="textll">FEATURED</a>
+        <a href="./starbucksgiftanytime.html" class="textll">ANYTIME</a>
+        <a href="./starbucksgiftCongratulations.html" class="textll"
+          >CONGRATULATIONS</a
+        >
+        <a href="./starbucksgiftthankyou.html" class="textll">THANK YOU</a>
+      </div>
+      <div class="text10">
+        <h1 class="anytime">Congratulations</h1>
+      </div>
+      <div class="contant4">
+        <img
+          class="orderimg3"
+          class="img6"
+          src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/97ee3280_2f05_43ad_bd94_f5c184d4f502_1_0a31455af9.png"
+          height="80px"
+          width="80px"
+        />
+        <p class="text11">Congrats</p>
+        <p class="text11">
+          Coffee. Cheer. Celebrate. Enjoy each of <br />your special moments
+          with Starbucks.
+        </p>
+        <button class="btn6">Add Item</button>
+      </div>
+      <div class="main5">
+        <div class="footer">
+          <div class="left4">
+            <img
+              class="img10"
+              src="https://www.starbucks.in/assets/icon/logo.png"
+            />
+          </div>
+          <div class="1">
+            <ul class="centre">
+              <a class="aboutus" href="#">About Us</a>
+              <a class="links" href="#">Our Heritage</a>
+              <a class="links" href="#">Coffeehouse</a>
+              <a class="links" href="#">Our Campany</a>
+              <a class="links" href="#">Our Campany</a>
+            </ul>
+          </div>
+          <div class="2">
+            <ul class="centre1">
+              <a class="respons" href="#">Responsibility</a>
+              <a class="link2" href="#">Diversity</a>
+              <a class="link2" href="#">Community</a>
+              <a class="link2" href="#">Ethical Sourcing</a>
+              <a class="link2" href="#">Environmental Stewardship</a>
+              <a class="link2" href="#">Learn More</a>
+            </ul>
+          </div>
+          <div class="3">
+            <ul class="centre2">
+              <a class="quick" href="#">Quick Links</a>
+              <a class="link3" href="#">Privacy Policy</a>
+              <a class="link3" href="#">FAQs</a>
+              <a class="link3" href="#"
+                >Starbucks India Mobile App<br />Terms of Use</a
+              >
+              <a class="link3" href="#">Customer Service</a>
+              <a class="link3" href="#">Starbucks Rewards Day Offer</a>
+              <a class="link3" href="#">Delivery</a>
+              <a class="link3" href="#">Season's Gifting</a>
+              <a class="link3" href="#">Beverage Subscription</a>
+            </ul>
+          </div>
+          <div class="4">
+            <ul class="center3">
+              <a class="socialmedia">SOCIAL MEDIA</a>
+              <img
+                class="insta"
+                src="https://static.vecteezy.com/system/resources/previews/023/986/502/non_2x/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png"
+              />
+              <img
+                class="fb"
+                src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.png"
+              />
+              <img
+                class="twitter"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHIZuDb--IJ-q5d97gWm1W2eyLj7BePcWnQ&s"
+              />
+            </ul>
+          </div>
+          <div class="5">
+            <div class="rightll">
+              <a href="https://play.google.com/store/games?hl=en&pli=1"
+                ><img
+                  class="andriod"
+                  src="https://www.starbucks.in/assets/images/appstoreiOS.png" /><br
+              /></a>
+              <a href="https://www.apple.com/in/app-store/">
+                <img
+                  class="iphone"
+                  src="https://www.starbucks.in/assets/images/appstoreAndroid.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer2">
+          <a class="Webfooter">Web Accessiblity</a>
+          <p class="line1">|</p>
+          <a class="Privacyfooter">Privacy Statement</a>
+          <p class="line1">|</p>
+          <a class="Termsfooter">Terms of Use</a>
+          <p class="line1">|</p>
+          <a class="Contactfoter">Contact Us</a>
+          <p class="copyright">
+            &copy;2024 Starbucks Coffee Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
