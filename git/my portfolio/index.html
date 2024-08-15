@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+      }
+      .left {
+        float: left;
+        margin-left: 10px;
+      }
+      header img {
+        vertical-align: middle;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+      }
+      .hamburger{
+        display: none;
+      }
+      .right {
+        position: relative;
+        left: 50%;
+      }
+      a {
+        width: fit-content;
+        position: relative;
+        top: 20px;
+        margin: 30px;
+        text-decoration: none;
+        color: black;
+      }
+      .h4 {
+        margin-left: 10px;
+      }
+      .blue {
+        height: 500px;
+
+        background-color: rgb(57, 97, 215);
+        color: white;
+        text-align: center;
+        padding: 100px;
+        font-size: x-large;
+      }
+      button {
+        height: 30px;
+        width: 120px;
+        color: black;
+        border-radius: 5px;
+        margin-right: 50px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      tr th {
+        border: 1px solid white;
+      }
+      .left1 {
+        top: 110px;
+        right: 100px;
+        position: relative;
+      }
+      .left1 img {
+        height: 40px;
+        width: 40px;
+        position: relative;
+      bottom: 17px;
+      }
+      .right1 {
+        bottom: 140px;
+        position: relative;
+      }
+      .aboutme {
+        text-align: center;
+        font-size: larger;
+        margin-top: 100px;
+      
+        height: 600px;
+       width: 1500px;
+      }
+      .get{
+        margin:30px ;
+
+      }
+      .left2 {
+        text-align: left;
+      
+      }
+      .para1 {
+        text-align: left;
+       
+      }
+     
+      
+      .cantant{
+        background-color: rgb(15, 156, 238);
+        height: 30px;
+        width: 100px;
+        color: white;
+      }
+      .left2{
+        float: left;
+        height: 400px;
+        width: 400px;
+        margin-left: 120px;
+      }
+      .right2{
+        float: right;
+        width: 600px;
+        text-align: left;
+        margin-right: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;bottom:20px;
+       
+        
+      }
+      .right2 button{
+        margin: 4px;
+        height: 50px;
+      }
+     .head{
+      text-align: center;
+      font-size: large;
+      position: relative;
+      top: 80px;
+      }
+     .right3{
+      display: flex;
+      flex-direction: column;
+      
+      position: relative;top: 40px;
+      text-align: left;
+      font-size: larger;
+      height: 350px;
+      width: 600px;
+      margin-left: 100px;
+
+     }
+     .overlapimg1{
+      position: absolute;
+      top: 205px;
+      left: 155px;
+     }
+     .left3 img{
+    
+      height: 400px;
+      width: 600px;
+      margin-left:  100px;
+      position: relative;
+      top:60px
+     }
+     .p1{
+      display: flex;  
+      }
+      .casestudy1{
+      background-color:rgb(15, 156, 238) ;
+      color: white;
+      height:50px;
+      width: 120px;
+      border: none;
+      cursor: pointer;
+      
+     }
+     .casestudy{
+      background-color:rgb(15, 156, 238) ;
+      color: white;
+      height: 50px;
+      width: 120px;
+      border: none;
+      position: relative;
+      bottom: 20px;
+      cursor: pointer;
+     }
+     .content1{
+      background-color:rgb(57, 97, 215) ;
+      height: 1100px;
+      width: 100%;
+      text-align: center;
+      font-size: larger;
+      color: white;
+     }
+     .form{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      height: 700px;
+      width: 60%;
+      border-radius: 1%;
+      margin-left: 300px;
+      position: relative;top: 50px;
+      color: grey;
+    }
+     .form1{
+      margin: 10px;
+      border-radius: 1%;
+      width:850px;
+       height: 40px;
+      }
+.form1 input{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(243, 236, 236);
+}
+ 
+h3{
+  margin-left: 20px;
+  text-align: left;
+  position: relative;top: 30px;
+}
+.mform1{
+  border-radius: 5px;
+  height: 200px;
+  width: 850px;
+  
+}
+.button1{
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color:rgb(15, 156, 238)  ;
+  font-size: x-large;
+  position: relative;left: 700px;
+  margin-top: 40px;
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 400px;
+  width: 100%;
+  border: 1px solid white;
+}
+
+
+.left4{
+  float: left;
+  position: relative;left: 200px;
+  font-size: larger;
+  width: 400px;
+  margin-top: 50px;
+}
+.right4{
+  float: right;
+  position: relative;
+  right:200px;
+  margin-top: 50px;
+}
+ .right4 h2{
+  position: relative;
+  left: 140px;
+}
+.img10{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 270px;
+}
+.img11{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 210px;
+}
+.img12{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 160px;
+}
+.img13{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 100px;
+}
+.img14{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 50px;
+}
+@media only screen and (max-width:720px){
+  body{
+    overflow-x:hidden;
+    background-color: aliceblue;
+  }
+  header{
+    width: 100%;
+  }
+  .hamburger{
+    position: relative;
+    left: 130px;
+    height: 2px;
+    width: 2px;
+    display: block;
+  }
+  .right{
+    display:none;
+  }
+  .left1{
+    display: none;
+  }
+  .right1{
+    width: 100%;
+    height:fit-content;
+    position: relative;
+    top: 70px;
+  }
+  .right1 h1{
+    margin: 0;
+    padding: 0;
+    font-size: larger; 
+  }
+  .right1 button{
+    position: relative;
+    left: 30px;
+  }
+  .blue{
+    font-size: large;
+    margin-top:10px;
+    padding:0;  
+    height: 400px;
+  }
+  .aboutme{
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    font-size: large;
+  }
+  .left2{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    right: 110px;
+    font-size: large; 
+  }
+  .right2{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    left: 150px;
+    font-size: large;
+    position: relative;
+    top: 30px;
+    margin-top: 50px;
+  }
+  .right2 h1{
+    position: relative;left: 60px;
+  }
+  .name button{
+    height: 40px;
+   position: relative;
+   bottom: 100px;
+   font-size: small;
+  }
+  .head{
+    position: relative;
+    bottom: 50px;
+    font-size: large;
+  }
+  
+  .left3{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    position: relative;right: 120px;
+    position: relative;bottom: 10px;
+    
+  }
+  .left3 img{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    left: 50px;
+  }
+  .right3{
+    text-align: center;
+   margin-top: 200px;
+   position: relative;
+   right: 60px;
+   font-size: large;
+   position: relative;top: 100px;
+  }
+  .casestudy{
+    position: relative;
+    left: 40px;
+    height: 50px;
+    font-size: small;
+  }
+  .content1{
+    position: relative;
+    top: 100px;
+    font-size: larger;
+    height: 950px;
+  }
+  .form{
+    position: relative;
+    right: 270px;
+    height: 500px;
+    width: 280px;
+  }
+  .form1{
+    height: 100px;
+    width: 230px;
+    border-radius: 1%;
+  }
+  .button1{
+   position: relative;top: 60px;
+   position: relative;left: 0px;
+   height: 70px;
+   width: 280px;
+   font-size: smaller;
+  }
+  .footer{
+    position: relative;
+    top: 100px;
+    position: relative;
+    right: 190px;
+    font-size: smaller;
+    height: 10px;
+  } 
+   .left4 p{
+    width: 250px;
+    font-size: smaller;
+   } 
+  .right4{
+    position: relative;
+    right: 30px;
+    position: relative;
+    bottom: 50px;
+    font-size: smaller;
+  }
+  .right4 img{
+    height: 30px;
+    width: 20px;  }
+}
+
+    </style>
+  <head>
+<html>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img
+          src="./potfioloimg1.jpeg"
+          alt="?image not found"
+        />
+      </div>
+     
+      <div class="h4"><h4>AMAN SINGH</h4></div>
+      <div class="hamburger">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg==" alt="">
+      </div>
+      <div class="right">
+        <nav>
+          <a href="#"><b>HOME</b></a>
+          <a href="#"><b>PROJECT</b></a>
+          <a href="#"><b>CONTACT</b></a>
+          <a href="#"><b>ABOUT</b></a>
+        </nav>
+      </div>
+    </header>
+    <div class="blue">
+      <div class="left1">
+        <table>
+          <tr>
+            <th>
+              <a href="https://www.linkedin.com/in/aman-singh-646123303/">
+              <img src="//dopefolio.netlify.app/assets/png/linkedin-ico.png" /></a>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <a href="https://github.com/amanrajputll">
+              <img
+              
+                src="https://dopefolio.netlify.app/assets/png/github-ico.png"
+              /></a>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <a href="https://x.com/AmanRaj73035520">
+              <img
+                src="https://dopefolio.netlify.app/assets/png/twitter-ico.png"
+              /></a>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <a href="https://www.youtube.com//amanrajputll/">
+              <img src="https://dopefolio.netlify.app/assets/png/yt-ico.png" /></a>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <a href="https://www.instagram.com/aman_rajputll/">
+              <img
+                src="https://dopefolio.netlify.app/assets/png/insta-ico.png"
+              /></a>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div class="right1">
+    
+        <h1>HEY, MY NAME IS AMAN SINGH</h1>
+        <p>
+         I am a dedicated Front-End Developer currently pursuing a Bachelor of Computer Applications (BCA) at the<br> 
+         Prestige Institute of Management and Research in Gwalior. With a strong foundation in web development and<br>
+          a passion for creating visually appealing and user-friendly interfaces, I have successfully completed an impressive <br> 
+          front-end project. My experience includes proficiency in HTML, CSS, JavaScript, and various modern frameworks <br>
+          and tools. I am committed to continuously learning and staying updated with the latest industry trends to deliver <br>
+          exceptional user experiences.
+        </p>
+        <button>Details</button>
+      </div>
+    </div>
+    <div class="aboutme">
+      <h1>ABOUT ME</h1>
+      <p>
+        I am driven by a love for continuous learning and a commitment to staying current with industry trends.<br>
+         My goal is to leverage my skills and creativity to contribute to innovative web solutions that enhance<br>
+          user experience and drive success.
+
+
+      </p>
+      <div class="left2">
+        <h2 class="get">Get to know me!</h2>
+        <p class="para1">
+          Hi, I’m Aman Singh, a Front-End Web Developer based in Gwalior.
+           I specialize in creating dynamic and user-friendly web experiences
+            with hands-on experience in building projects like a  Starbucks clone,
+             a stopwatch app, a to-do list, and a weather forecast website.<br><br>
+             Currently, I’m honing my skills through an internship at Zint Institute,
+              where I am gaining valuable industry experience and expanding my front-end
+               development expertise.<br><br>
+               Outside of coding, I enjoy traveling and listening to music, which fuels my creativity and keeps me inspired. I’m always eager to take on new challenges and continue growing in the world of web development.
+        </p>
+          <div><button class="cantant">CONTANT</button></div>
+        </div>
+      <br>
+      <div class="right2">
+        <h1>My Skills</h1>
+        <div class="name button">
+        <button type="name" >HTML</button>
+        <button type="name" >CSS</button>
+        <button type="name" >JavaScript</button>
+        <button type="name" >Java</button>
+        <button type="name" >DSA</button>
+        <button type="name" >Mysql</button>
+        <button type="name" >Firebase</button>
+        
+      </div>
+      </div>
+    </div>
+    <div class="head"> <h1 class="projecta">Project</h1>
+      <p>A web project involves designing and developing a website or application,
+         focusing on user experience, functionality, and aesthetics. It integrates coding,<br>
+          content creation, and testing to achieve specific goals.</p>
+    <div class="project">
+     <div class="p1">
+      <div class="left3">
+        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg">
+      </div>
+      <div class="right3">
+        <h2>Starbucks Clone</h2>
+        <p>I created a Starbucks clone using HTML, CSS, and JavaScript. This project
+           involved replicating the website’s design and functionality, focusing on creating
+            an intuitive user interface and dynamic elements. The result is a visually appealing,
+             interactive site that mirrors Starbucks' online presence with responsive 
+             design and engaging features.
+
+
+
+        </p>
+       <a href="https://github.com/amanrajputll/fullStackLearning/tree/main/git/starbucks"><button class="casestudy1">CASE STUDY</button></a>
+      </div>
+    </div>
+    </div><br><br><br><br>
+    <div class="project">
+     <div class="p1">
+      
+      <div class="left3">
+        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg">
+      </div>
+      <div class="overlapimg1">
+       <a href="./starbucks1.html"> <img src="https://img.freepik.com/premium-photo/starbucks-cup-sitting-table-with-city-view-background-generative-ai_791316-101283.jpg"  style="height: 300px;"
+        width="430px"> </a>
+      </div>
+      <div class="right3">
+        <h2>StopWatch</h2>
+        <p>I developed a stopwatch using HTML, CSS, and JavaScript. The project features
+           a user-friendly interface with start, stop, and reset functionalities. HTML structures
+            the layout, CSS styles the appearance, and JavaScript handles the timing logic and 
+            interactions, providing a seamless and functional timing tool</p>
+         <a href="https://github.com/amanrajputll/fullStackLearning/tree/main/git/stopwatch"> <button class="casestudy">CASE STUDY</button></a>
+      </div>
+    </div><br><br><br><br>
+    <div class="project">
+     <div class="p1">
+      <div class="left3">
+        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg">
+      </div>
+      <div class="right3">
+        <h2>Weather Forecast</h2>
+        <p>I created a weather forecast application using HTML, CSS, JavaScript, and
+           an API. The project fetches real-time weather data, presenting it through 
+           a sleek, user-friendly interface. HTML structures the layout, CSS enhances
+            visual appeal, JavaScript manages data interactions, and the API delivers
+             accurate weather information.
+
+
+
+        </p>  
+    <a href="https://github.com/amanrajputll/fullStackLearning/tree/main/git/weather%20forcast"> <button class="casestudy">CASE STUDY</button></a>
+      </div>
+      </div>
+    </div><br><br><br><br>
+    <div class="content1"><br><br>
+      <h1> CONTENT</h1>
+      <p>
+        Feel free to adjust the details to better fit your specific achievements and goals!</p>
+      <div class="form">
+        <h3>Name</h3>
+       <div class="form1">
+      
+        <input class="form1" type="name" placeholder="Enter Your Name" style="border: none;">
+       </div>
+       <h3>Email</h3 >
+       <div class="form1">
+        
+          <input class="form1" type="email" placeholder="Enter Your Email " style="border: none;">
+       </div>
+       <h3>Message</h3>
+       <div class="mform1 form1">
+       
+        <input class="mform1 form1" type="message" placeholder="Message" style="border: none;">
+       </div>
+       <button class="button1">
+        Submit
+       </button>
+       </div>
+       </div>
+       <footer>
+      <div class="footer">
+      <div class="left4">
+      <h2>Aman Singh</h2>
+      <p>Thank you for visiting my portfolio. I’m excited to bring creative solutions
+         and technical expertise to new projects. Let’s connect and explore how we can 
+         collaborate to build innovative and impactful web experiences. Feel free to reach 
+         out with any opportunities or inquiries!
+
+      </p>
+      </div>
+      <div class="right4">
+        <h2>Social</h2>
+        <div class="socialimg">
+       <a href="https://www.linkedin.com/in/aman-singh-646123303/"> <img class="img10" src="https://dopefolio.netlify.app/assets/png/linkedin-ico.png" alt="image">  </a>
+        <a href="https://github.com/amanrajputll"><img  class="img11" src="https://dopefolio.netlify.app/assets/png/github-ico.png" alt="image">  </a>
+        <a href="https://x.com/AmanRaj73035520"><img  class="img12" src="https://dopefolio.netlify.app/assets/png/twitter-ico.png" alt="image">  </a>
+        <a href="https://www.youtube.com//amanrajputll/"><img  class="img13" src="https://dopefolio.netlify.app/assets/png/yt-ico.png" alt="image"></a>
+         <a href="https://www.instagram.com/aman_rajputll/"> <img  class="img14" src="https://dopefolio.netlify.app/assets/png/insta-ico.png" alt="image">   </a>     
+        </div>
+      </div>
+  </footer>
+  
+  </head>
+  </body>
+</html>
